@@ -7,16 +7,29 @@
 body{
   height: 100%;
   width: 100%;
+  background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 }
 
-.main{
+.container{
   background-color: aqua;
-  height: 90%;
-  width: 90%;
+  height: 90vh;
+  width: 90vw;
 }
 
-#result{
-    width: 50px;
-    height: 50px;
-    background-color: aqua;
+.result{
+  height: 50px;
+  width: 50px;
+  background-color: lightpink;
+}
+
+.current{
+  height: 50px;
+  width: 50px;
+  background-color: bisque;
+}
+
+.rolldice{
+  height: 50px;
+  width: 50px;
+  background-color: burlywood;
 }

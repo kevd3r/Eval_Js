@@ -4,30 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,=">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 <body>
-  <div class='main'>
-    <div>
-      <button type="button" class="newGame">Nouvelle partie</button>
-    </div>
-    <div class="rollingDice">
-      <button type="button" id="rolldice">rolldice</button>
-      <div id="result"></div>
-    </div>
-    <div>
-      <h3>joueur 1</h3>
-      <button type="button">Hold</button>
-      <div id="global1"></div>
-    </div>
-    <div>
-      <h3>Joueur 2</h3>
-      <button type="button">Hold</button>
-      <div id="global2"></div>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-12" id="main_title">Jeu du rouler de dés</h1>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Player 1</h2>
+            <div class="result" id="result1">
+
+            </div>
+            <div class="current" id="current1">
+
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">New Game</h2>
+            <button type="button" id="newGame">New Game</button>
+            <div class="result-rolldice" id="result-rolldice">
+
+            </div>
+            <button type="button" id="rollDice">Roll</button>
+            <button type="button" id="hold">Hold</button>
+        </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Player 2</h2>
+            <div class="result" id="result2">
+
+            </div>
+            <div class="current" id="current2">
+
+            </div>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
-  <script href="node_modules/jquery/dist/jquery.min.js"></script>
-  <script href="scripts/script.js"></script>  
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
